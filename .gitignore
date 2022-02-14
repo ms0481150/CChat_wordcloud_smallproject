@@ -1,0 +1,4 @@
+Data/
+.ipynb__checkpoints/
+__pycache__/
+main.py
