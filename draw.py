@@ -10,9 +10,10 @@ def show_frequency(dict_text):
     return df_frequency
 
 def show_pie_plot(df_frequency):
-    plt.rcParams['axes.unicode_minus'] = False
-    df = df_frequency.set_index("單字").head(30)
-    df.plot(kind="pie", subplots=True, legend=False, figsize=(5,5))
+    #plt.rcParams['axes.unicode_minus'] = False
+    df = df_frequency.set_index("單字").head(10)
+    df.plot(kind="pie", subplots=True, legend=True, figsize=(10,5))
+    plt.legend(bbox_to_anchor=(1.05, 1.0), loc='upper left')
     plt.show()
 
 
