@@ -31,9 +31,6 @@ def show_wordcloud(dict_text):
                     scale=16                                               #   匯出的圖片大小
                     ).generate_from_frequencies(dict_text)      
 
-    #cloud = WordCloud(font_path="./Data/竹風體W4.ttc", 
-    #                  scale=16, stopwords=stopwords).generate_from_frequencies(dict_text)
-
     cloud.to_file('output.png')
     image = img.imread('output.png')
     plt.imshow(image)
